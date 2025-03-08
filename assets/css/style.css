@@ -80,6 +80,7 @@
 
 ***/
 
+
 .about-section{
 	position:relative;
 	padding:110px 0px 60px;
@@ -1433,7 +1434,7 @@
     }
 
     .text ul li {
-        flex-direction: column;
+        flex-direction: unset;
         align-items: flex-start;
     }
 
@@ -1907,7 +1908,34 @@
         max-width: 100px;
         height: auto;
     }
-
-
-
+	.mini-footer {
+		text-align: center;
+		font-size: 14px;
+		color: black;
+		background: #fff;
+		padding: 12px;
+		
+		bottom: 0;
+		width: 100%;
+		box-shadow: 0 -3px 10px rgba(0, 0, 0, 0.1);
+		font-family: 'Poppins', sans-serif;
+		letter-spacing: 0.5px;
+		font-weight: 500;
+		border-top: 2px solid #f1f1f1;
+	}
+	
+	.footer-links {
+		margin-top: 5px;
+	}
+	
+	.footer-links a {
+		color: #555;
+		text-decoration: none;
+		font-weight: 500;
+		transition: 0.3s;
+	}
+	
+	.footer-links a:hover {
+		color: #ff4b2b;
+	}
 
