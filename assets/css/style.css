@@ -16,6 +16,13 @@
 @import url('animate.css');
 @import url('owl.css');
 
+@font-face {
+    font-family: "flaticon";
+    src: url("../fonts/flaticon.ttf") format("truetype"),
+
+}
+
+
 
 /*** 
 
@@ -1003,6 +1010,13 @@
     border-radius: 5px;
     font-size: 18px;
     cursor: pointer;
+} .form-container textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
 }
 .download-btn {
     display: inline-block;
@@ -1304,62 +1318,58 @@
 
 /* trainer end */
 /* accordian */
-.course-section {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            max-width: 1200px;
-            margin: auto;
-        }
-        .course-content {
-            width: 45%;
-        }
-        .course-content h2 {
-            font-size: 38px;
-            font-weight: bold;
-        }
-        .highlight {
-            color: teal;
-        }
-        .video-container {
-            width: 100%;
-            margin-top: 20px;
-        }
-        iframe {
-            width: 100%;
-            height: 250px;
-        }
-        .accordion {
-            width: 45%;
-        }
-        .accordion-item {
-            background: #eef1f6;
-            margin-bottom: 10px;
-            border-radius: 5px;
-            overflow: hidden;
-        }
-        .accordion-title {
-            padding: 15px;
-            font-size: 18px;
-            font-weight: bold;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            cursor: pointer;
-        }
-		.accordion-content {
+.faq-section {
+   
+    margin: auto;
+    padding: 40px 20px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+}
+.faq-heading {
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+.faq-columns {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.faq-column {
+    width: 48%;
+}
+.accordion {
+    width: 100%;
+}
+.accordion-item {
+    background: #eef1f6;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.accordion-title {
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+.accordion-content {
     padding: 20px;
     background-color: #f8f9fa;
     border-radius: 10px;
-  }
-  .accordion-content ul {
+}
+.accordion-content ul {
     list-style: none;
     padding: 0;
     margin: 0;
     display: grid;
     gap: 10px;
-  }
-  .accordion-content li {
+}
+.accordion-content li {
     background: #ffffff;
     padding: 15px;
     border-radius: 8px;
@@ -1370,53 +1380,32 @@
     display: flex;
     align-items: center;
     gap: 10px;
-  }
-  .accordion-content li:hover {
+}
+.accordion-content li:hover {
     transform: translateY(-3px);
-  }
-  .accordion-content li::before {
+}
+.accordion-content li::before {
     content: '\2714'; /* Checkmark icon */
     color: #007bff;
     font-weight: bold;
-  }
-  .text ul {
-    list-style: none;
-    padding-left: 0;
-}
-
-.text ul li {
-    display: flex;
-    align-items: flex-start;
-}
-
-.text ul li i {
-    margin-right: 8px; /* Adds spacing between the icon and text */
-}
-
-.text ul li span {
-    display: block;
-    padding-left: 20px; /* Indents the second line */
 }
 @media (max-width: 768px) {
-    .course-section {
-        flex-direction: column;
-        align-items: flex-start;
+    .faq-section {
         padding: 20px;
     }
 
-    .course-content,
-    .accordion {
-        width: 100%;
-		padding-bottom: 10px;
-    }
-
-    .course-content h2 {
+    .faq-heading {
         font-size: 28px;
-        text-align: center;
+        margin-bottom: 20px;
     }
 
-    .video-container iframe {
-        height: 200px;
+    .faq-columns {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .faq-column {
+        width: 100%;
     }
 
     .accordion-title {
@@ -1433,13 +1422,8 @@
         padding: 12px;
     }
 
-    .text ul li {
-        flex-direction: unset;
-        align-items: flex-start;
-    }
-
-    .text ul li span {
-        padding-left: 0;
+    .accordion-content ul {
+        gap: 8px;
     }
 }
 
@@ -1939,3 +1923,101 @@
 		color: #ff4b2b;
 	}
 
+    .flaticon-check:before {
+        content: "\f186";
+    }
+    .about-sectiont {
+        padding: 60px 20px;
+        background: black;
+    }
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    .about-content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 40px;
+        flex-wrap: wrap;
+    }
+    .about-text {
+        flex: 1;
+        font-size: 18px;
+        line-height: 1.6;
+        color: white;
+    }
+    .about-text h2 {
+        font-size: 32px;
+        color: #002147;
+        margin-bottom: 15px;
+    }
+    .about-image {
+        flex: 1;
+        text-align: center;
+    }
+    .about-image img {
+        max-width: 100%;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .numbers-section {
+        text-align: center;
+        margin-top: 50px;
+   
+        padding: 40px 20px;
+        border-radius: 10px;
+        color: #fff;
+    }
+    .numbers-section h2 {
+        font-size: 28px;
+        color: #fff;
+        margin-bottom: 20px;
+    }
+    .numbers-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+        justify-content: center;
+    }
+    .number-box {
+        background: #ffffff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        font-size: 18px;
+        font-weight: bold;
+        text-align: center;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: #002147;
+    }
+    .number-box:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    }
+    .icon {
+        font-size: 30px;
+        margin-bottom: 10px;
+        color: #002147;
+    }
+    .paint{
+        color: white;
+    }
+    @media (max-width: 1024px) {
+        .numbers-grid {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        .about-content {
+            flex-direction: column;
+            text-align: center;
+        }
+    }
+    @media (max-width: 768px) {
+        .numbers-grid {
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
