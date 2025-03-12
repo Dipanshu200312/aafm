@@ -2020,4 +2020,10 @@
         .numbers-grid {
             grid-template-columns: repeat(1, 1fr);
         }
+        .dr{
+            display: none;
+        }
+    }
+    .dr{
+        margin-top: 113px;
     }
